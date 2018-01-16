@@ -53,7 +53,7 @@ function removeFromCart(item) {
   cart.forEach(function(element,index){
     if(Object.keys(cart[index]) == item){
       isInCart = true;
-      cart = cart.splice(index,1);
+      cart.splice(index,1);
     }
   })
   if(isInCart===false){
