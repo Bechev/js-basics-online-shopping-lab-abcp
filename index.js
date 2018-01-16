@@ -54,10 +54,12 @@ function removeFromCart(item) {
     if(Object.keys(cart[index]) == item){
       isInCart = true;
       cart = cart.splice(index,1);
-      return cart;
-    } else{
-    console.log("That item is not in your cart.");
     }
+    if(isInCart===false){
+    console.log("That item is not in your cart.");
+  }else{
+    return cart;
+  }
   })
 }
 
