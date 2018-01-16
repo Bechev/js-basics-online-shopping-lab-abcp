@@ -53,10 +53,10 @@ function removeFromCart(item) {
   cart.forEach(function(element,index){
     if(Object.keys(cart[index]) === item){
       isInCart = true;
-      cart = cart.splice(index,1):
-      return cart
+      cart = cart.splice(index,1);
+      return cart;
     } else{
-    return "That item is not in your cart."
+    return "That item is not in your cart.";
     }
   })
 }
