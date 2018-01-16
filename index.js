@@ -51,7 +51,7 @@ function removeFromCart(item) {
   // write your code here
   var isInCart = false;
   cart.forEach(function(element,index){
-    if(Object.keys(cart[index]) === item){
+    if(Object.keys(cart[index]) == item){
       isInCart = true;
       cart = cart.splice(index,1);
       return cart;
