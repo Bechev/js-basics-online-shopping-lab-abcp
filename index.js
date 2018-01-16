@@ -55,12 +55,12 @@ function removeFromCart(item) {
       isInCart = true;
       cart = cart.splice(index,1);
     }
-    if(isInCart===false){
+  })
+  if(isInCart===false){
     console.log("That item is not in your cart.");
   }else{
     return cart;
   }
-  })
 }
 
 function placeOrder(cardNumber) {
