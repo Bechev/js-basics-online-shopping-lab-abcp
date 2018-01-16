@@ -49,7 +49,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if(cart.hasOwnProperty(item) == true){
+  if(cart.hasOwnProperty(item) === false){
     delete cart[item];
     return cart;
   } else {
